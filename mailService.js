@@ -12,7 +12,7 @@ const transporter = nodemailer.createTransport({
 const mailService = {
   sendMail: async function (toMail, mailContent) {
     await transporter.sendMail({
-      from: `"Abhishek GUPTA" <osmmediaplatform@gmail.com>`,
+      from: `Path Detials`,
       to: toMail,
       subject: "nearMed Registration OTP.",
       html: `<h1>OTP:${mailContent}</h1>`,
